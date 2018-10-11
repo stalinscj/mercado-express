@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mercado Express</title>
+	<link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+	<!-- Bootstrap CSS 3.3.7-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<!-- Bootstrap Social -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+
+	<!-- Mis Estilos -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/navbar-colores.css"> -->
+
+</head>
+<body data-spy="scroll" data-target="#navegacion">
+	<div class="container">
+		<!-- Navbar -->
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navegacion">
+							 <span class="sr-only">Menú</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#jumbotron"><span class="glyphicon glyphicon-shopping-cart"></span> Mercado Express</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navegacion">
+						<ul class="nav navbar-nav">
+							<li><a href="#acerca-de">Acerca de</a></li>
+							<li class="dropdown">
+								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filosofía<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li class="divider"></li>
+									<li><a href="#filosofia-de-gestion">Objetivos</a></li>
+									<li class="divider"></li>
+									<li><a href="#filosofia-de-gestion">Misión</a></li>
+									<li class="divider"></li>
+									<li><a href="#filosofia-de-gestion">Visión</a></li>
+									<li class="divider"></li>
+								</ul>
+							</li>
+							<li><a href="#guia-de-uso">Empieza Ya!</a></li>
+							<li><a href="#equipo">¿Quiénes somos?</a></li>
+							<li><a href="#ubicanos">Ubícanos <span class="glyphicon glyphicon-map-marker"></span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- Jumbotron -->
+		<div class="row" id="jumbotron">
+			<div class="col-md-12">
+				<div class="jumbotron">
+					<h2 class="texto-sombra-jumbotron">Bienvenidos a Mercado Express</h2>
+					<p class="text-justify texto-sombra-jumbotron">
+						Mercado express es una compañia de compras que facilita al cliente la obtención de los artículos necesarios para hacer un mercado, 
+						ofreciéndole a nuestros usuarios la facilidad de comprar productos alimenticios necesarios para su consumo.
+					</p>
+					<p>
+						<a id="btn-modal" href="#modal-contacto" role="button" class="btn btn-success" data-toggle="modal">
+							Contáctanos <span class="glyphicon glyphicon-envelope"></span>
+						</a>
+						<a id="btn-descargar" href="app_mercado_express.txt" role="button" class="btn btn-info" download="app.txt">
+							Descargar <span class="glyphicon glyphicon-cloud-download"></span>
+						</a>
+					</p>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="modal-contacto" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span></button>
+								<h4 class="modal-title" id="titulo-modal">Contáctanos</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form">
+									<div class="form-group">
+										<label for="nombre">Nombre: </label>
+										<input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" />
+									</div>
+									<div class="form-group">
+										<label for="correo">Correo: </label>
+										<input type="email" class="form-control" id="correo" placeholder="Escriba su correo" />
+									</div>
+									<div class="form-group">
+										<label for="mesaje">Mensaje: </label>
+										<textarea class="form-control" id="mesaje" type="text" placeholder="Escriba su mensaje"></textarea>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Enviar <span class="glyphicon glyphicon-send"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Acerca de -->
+		<div class="row seccion" id="acerca-de">
+			<h2>App Mercado Express</h2>
+			<div class="row" id="fondo-acerca-de">
+				<div class="col-sm-3 col-xs-12">
+					<img alt="App Mercado Express" id="img-acerca-de" class="img-responsive img-thumbnail" src="img/img-acerca-de.png" />
+				</div>
+				<div class="col-sm-9 col-xs-12 texto-acerca-de text-justify">
+					<br/><b>
+					<!-- <p>
+						Somos una compañía de compras que facilita al cliente la obtención de los artículos necesarios para hacer un mercado, ofreciéndole a nuestros usuarios la facilidad de comprar productos alimenticios necesarios para su consumo, con tan solo un clic el cliente deja en manos de mercado express la compra de sus alimentos!
+					</p> -->
+					<p>
+                        Si usted no tiene tiempo para realizar sus compras o camino mucho para encontrar un producto y no pudo, nosotros le traemos la nueva innovación en aplicación , para que no tenga que dejar a un lado sus labores diarios , con solo contactarnos procedemos a realizar sus comprar y lo llevamos a la puerta de su casa, también puede optar por buscar sus pedidos en nuestras oficinas las cuales están abiertas para todo usuario.
+					</p>
+					<p>
+						Usted puede usar Mercado Express descargando la aplicación en su dispositivo móvil es totalmente gratis y confiable
+					</p>
+					<p>
+						Para realizar sus pedidos sigue los pasos que se le muestran a continuación.
+					</p>
+					</b>
+				</div>
+			</div>
+		</div>
+		<!-- Filosofía -->
+		<div class="row seccion" id="filosofia-de-gestion">
+			<h2>Filosofía de gestión</h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-4 text-justify" id="objetivos">
+					<h3 class="text-left">Objetivos</h3>
+					<ul>
+						<li>Dar a conocer mercado express en toda Ciudad Guayana por medio de nuestra aplicación y pagina web, además de anuncios, propagandas, y cualquier otro medio de comunicación que nos ayude a comercializarnos.</li>
+						<li>Ofrecer servicios de compra de alimentos en toda Ciudad Guayana para así mejorar en parte la vida cotidiana de nuestros clientes.</li>
+						<li>Ofrecer nuestros servicios al cliente las 24 horas los 7 días de la semana.</li>
+						<li>Ampliar nuestra cartera de clientes en un corto y mediano plazo (6 clientes por trabajador de 3 a 6 meses).</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 text-justify" id="mision">
+					<h3 class="text-left">Misión</h3>
+					<p>
+						Nos esforzamos por ofrecer y proporcionar a las familias de Ciudad Guayana bienestar en el hogar a través las tecnologías más innovadoras y servicio de excelencia a medida de las necesidades cotidianas de cada persona al momento de hacer el mercado para su hogar, con el objetivo de incrementar su competitividad y productividad en el día a día.
+					</p>
+					<p>
+						Para ello implementamos y desarrollamos soluciones prácticas y creativas adaptadas a sus necesidades en bienestar de nuestra gente.
+					</p>
+					<p>
+						Nuestra base parte del aprovechamiento de las nuevas tecnologías.
+					</p>
+				</div>
+				<div class="col-xs-12 col-md-4 text-justify" id="vision">
+					<h3 class="text-left">Visión</h3>
+					<p>
+						Queremos estar comprometidos con los problemas de nuestros clientes de forma transparente y eficaz para convertirnos en su socio de confianza. 
+					</p>
+					<p>
+						En nuestra visión queremos ser una empresa de referencia, que camina con el cambio de la tecnología y la sociedad, dando a conocer nuevas posibilidades a la hora de realizar el mercado para el hogar.
+					</p>
+					<p>
+						Esta labor se debe desempeñar de forma ética y satisfactoria para nosotros, nuestros clientes y el resto de la sociedad.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Guia -->
+		<div class="row seccion" id="guia-de-uso">
+			<h2>Guía de uso</h2>
+			<div class="col-xs-12">
+				<div class="carousel slide" id="slideshow-guia">
+					<ol class="carousel-indicators">
+						<li data-slide-to="0" data-target="#slideshow-guia" class="active" ></li>
+						<li data-slide-to="1" data-target="#slideshow-guia"></li>
+						<li data-slide-to="2" data-target="#slideshow-guia"></li>
+						<li data-slide-to="3" data-target="#slideshow-guia"></li>
+						<li data-slide-to="4" data-target="#slideshow-guia"></li>
+						<li data-slide-to="5" data-target="#slideshow-guia"></li>
+						<li data-slide-to="6" data-target="#slideshow-guia"></li>
+						<li data-slide-to="7" data-target="#slideshow-guia"></li>
+						<li data-slide-to="8" data-target="#slideshow-guia"></li>
+						<li data-slide-to="9" data-target="#slideshow-guia"></li>
+						<li data-slide-to="10" data-target="#slideshow-guia"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img alt="Catálogo" src="img/img-paso-0.jpeg" />
+							<div class="carousel-caption">
+								<h4>Catálogo</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 1" src="img/img-paso-1.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 1/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 2" src="img/img-paso-2.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 2/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 3" src="img/img-paso-3.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 3/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 4" src="img/img-paso-4.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 4/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 5" src="img/img-paso-5.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 5/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 6" src="img/img-paso-6.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 6/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 7" src="img/img-paso-7.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 7/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 8" src="img/img-paso-8.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 8/9</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="Paso 9" src="img/img-paso-9.jpeg" />
+							<div class="carousel-caption">
+								<h4>Paso 9/9</h4>
+							</div>
+						</div>
+					</div> <a class="left carousel-control" href="#slideshow-guia" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#slideshow-guia" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+			</div>
+		</div>
+		<!-- Equipo -->
+		<div class="row seccion text-center" id="equipo">
+			<h2 class="text-left">Equipo</h2>
+			<div class="col-xs-12 col-sm-6 col-md-3 fondo-perfil-oscuro" >
+				<br/>
+				<img alt="Stalin Sánchez" src="img/img-perfil.jpg" class="center-block img-circle img-responsive img-thumbnail img-perfil" />
+				<h4>Stalin Sánchez</h4>
+				<h5><i>Desarrollador Web</i></h5>
+				<p>
+					Estudiante de la Universidad Nacional Experimental De Guayana.
+				</p>
+				<a href="https://twitter.com/stalinscj"  target="_blank" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+				<a href="#" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
+				<a href="#" target="_blank" class="btn btn-social-icon btn-flickr"><span class="fa fa-instagram"></span></a>
+				<br/><br/>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 fondo-perfil-claro">
+				<br/>
+				<img alt="Stalin Sánchez" src="img/img-perfil.jpg" class="center-block img-circle img-responsive img-thumbnail img-perfil" />
+				<h4>Stalin Sánchez</h4>
+				<h5><i>Desarrollador Móvil</i></h5>
+				<p>
+					Estudiante de la Universidad Nacional Experimental De Guayana.
+				</p>
+				<a href="https://twitter.com/stalinscj" target="_blank" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+				<a href="#" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
+				<a href="#" target="_blank" class="btn btn-social-icon btn-flickr"><span class="fa fa-instagram"></span></a>
+				<br/><br/>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 fondo-perfil-oscuro">
+				<br/>
+				<img alt="Stalin Sánchez" src="img/img-perfil.jpg" class="center-block img-circle img-responsive img-thumbnail img-perfil" />
+				<h4>Stalin Sánchez</h4>
+				<h5><i>Diseñador</i></h5>
+				<p>
+					Estudiante de la Universidad Nacional Experimental De Guayana.
+				</p>
+				<a href="https://twitter.com/stalinscj" target="_blank" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+				<a href="#" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
+				<!-- <a href="#" target="_blank" class="btn btn-social-icon btn-flickr"><span class="fa fa-instagram"></span></a> -->
+				<br/><br/>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 fondo-perfil-claro">
+				<br/>
+				<img alt="Stalin Sánchez" src="img/img-perfil.jpg" class="center-block img-circle img-responsive img-thumbnail img-perfil" />
+				<h4 class="text-center">Stalin Sánchez</h4>
+				<h5><i>Marketing Digital</i></h5>
+				<p>
+					Estudiante de la Universidad Nacional Experimental De Guayana.
+				</p>
+				<!-- <a href="#" target="_blank" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a> -->
+				<a href="#" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
+				<a href="#" target="_blank" class="btn btn-social-icon btn-flickr"><span class="fa fa-instagram"></span></a>
+				<br/><br/>
+			</div>
+		</div>
+		<!-- Ubicanos -->
+		<div class="row seccion" id="ubicanos">
+			<h2>Ubícanos</h2>
+			<div class="col-xs-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.375416033793!2d-62.767180585218696!3d8.265379594052824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf94693b5f6ad%3A0x2705e64c715d8eb3!2sAvenida+Atlantico%2C+Ciudad+Guayana+8050%2C+Bol%C3%ADvar!5e0!3m2!1ses-419!2sve!4v1488600424533" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-xs-12">
+				<address>
+					 <strong>Mercado Express C.A.</strong>
+					 <br /> Av. Atlántico, Puerto Ordaz
+					 <br /> Bolívar - Venezuela
+					 <br /> <abbr title="Phone">Tlf:</abbr> 0286-1234567
+				</address>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap JS 3.3.7-->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/acciones.js" type="text/javascript"></script>
+	
+</body>
+</html>

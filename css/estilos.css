@@ -1,0 +1,73 @@
+body:{
+	position: relative;
+}
+
+.jumbotron{
+	margin-top: 80px;
+	background-image: url("../img/img-jumbotron.png");
+	/*text-shadow: 0 0 3px #000, 0 0 5px #000;*/
+}
+
+.texto-sombra-jumbotron{
+	/*text-shadow: 0 0 3px #FFF, 0 0 5px #FFF;*/
+	/*text-shadow: 3px 3px 3px #000, 3px 3px 5px #000;*/
+	color: #FFF;
+	/*text-shadow: 2px 2px 5px #FFF;*/
+}
+
+#guia-de-uso{
+	margin-bottom: 10px;
+
+}
+
+.seccion{
+	padding-top: 40px;
+	border-top: 1px solid #ccc;
+	/*background-image: url("http://lorempixel.com/1280/720/food/");*/
+}
+
+#fondo-acerca-de{
+	background-image: url("../img/img-fondo-acerca-de.jpg");
+}
+
+.texto-acerca-de{
+	text-shadow: 0 0 3px #FFF, 0 0 5px #FFF;
+	/*text-shadow: 2px 2px 5px #FFF;*/
+}
+
+#objetivos{
+	background-color: #E6A841;
+	padding-bottom: 10px;
+}
+
+#mision{
+	background-color: #FFBC49;
+	padding-bottom: 10px;
+}
+
+
+#vision{
+	background-color: #E6A841;
+	padding-bottom: 50px;
+}
+
+#filosofia-de-gestion{
+	margin-bottom: 10px;
+}
+
+.img-perfil{
+	width: 144px;
+	height: 144px;
+}
+
+.fondo-perfil-oscuro{
+	background-color: #E6A841;
+}
+
+.fondo-perfil-claro{
+	background-color: #FFBC49;
+}
+
+#equipo{
+	margin-bottom: 10px;
+}
